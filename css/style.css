@@ -1,0 +1,314 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+/* #339af0 */
+
+#nav-bar {
+  text-align: center;
+}
+
+#banner {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+
+  background-size: cover;
+  height: 50vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#banner span {
+  margin-top: 18px;
+  opacity: 0.8;
+}
+/* phần Nav-bar */
+
+#nav-bar .container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+#nav-bar a {
+  padding: 20px 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-left: 1px solid #e7f5ff;
+  border-right: 1px solid #e7f5ff;
+}
+#nav-bar a:nth-child(odd) {
+  border-right: none;
+}
+.nav-bar-icon {
+  margin-left: 4px;
+  color: #339af0;
+}
+
+.nav-bar-img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#target {
+  margin-top: 20px;
+  padding: 50px;
+}
+#target p {
+  line-height: 1.4;
+  color: #495057;
+}
+
+#personal-info {
+  padding: 50px;
+}
+#about .section-title {
+  margin-bottom: 32px;
+}
+
+#personal-info ul {
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+#personal-info li {
+  line-height: 1.4;
+  color: #495057;
+}
+#personal-info span {
+  font-weight: bold;
+}
+#personal-info .icon {
+  color: #339af0;
+}
+
+/* Phần job-info  */
+#job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+#job-info h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#job-info .job-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px;
+  border: 1px solid #f1f3f5;
+}
+#job-info .job-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px;
+}
+
+#job-info .item-headding {
+  position: relative;
+}
+#job-info .item-headding::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #339af0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  transform: translateY(-50%);
+}
+#job-info .job-icon {
+  width: 25%;
+  font-size: 44px;
+  color: #495057;
+}
+
+#job-info .job-info-item p {
+  line-height: 1.4;
+  color: #495057;
+}
+#job-info .job-info-item b {
+  text-transform: initial;
+  background-color: #339af0;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+}
+#job-info .favourite {
+  display: flex;
+  justify-content: space-around;
+}
+#job-info .favourite li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #495057;
+}
+#job-info .favourite .icon {
+  width: 48px;
+  height: 48px;
+  color: #339af0;
+  border-radius: 50%;
+  border: 1px solid #339af0;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#job-info span {
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+  border-radius: 4px;
+}
+#job-info .blue {
+  background: #339af0;
+}
+#job-info .gray {
+  background-color: #adb5bd;
+}
+
+/*Phần certificate  */
+
+.certificate-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 32px;
+}
+
+.certificate-item {
+  display: flex;
+  gap: 12px;
+  margin: 24px 0;
+}
+.certificate-item2 {
+  padding-left: 12px;
+  border-left: 1px solid #d6c08d;
+}
+.certificate-item3 {
+  padding-top: 24px;
+  grid-column: 1/3;
+  border-top: 1px solid #d6c08d;
+}
+
+.certificate-img {
+  width: 160px;
+}
+.certificate-item h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.certificate-item-text p {
+  line-height: 1.4;
+  color: #495057;
+}
+
+.project-list {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+.project-item {
+  border: 1px solid #dbdbdb;
+}
+.project-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+}
+.project-item span {
+  background-color: #339af0;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.project-nav ul {
+  color: #495057;
+  display: flex;
+  list-style-type: none;
+  padding: 16px 12px;
+}
+.project-nav li {
+  margin-right: 12px;
+}
+table {
+  border-collapse: collapse;
+}
+.project-item td {
+  color: #495057;
+  line-height: 1.4;
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid #dbdbdb;
+}
+
+.project-img {
+  width: 100%;
+}
+/* phần Footer */
+
+#footer .container {
+  color: #495057;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 12px;
+}
+#footer .icon {
+  color: #339af0;
+  font-size: 32px;
+}
